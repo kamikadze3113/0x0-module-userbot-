@@ -25,11 +25,11 @@ class ZeroXzerOMod(loader.Module):
 		message.edit("<b>⚞-⚟</b>")
 		reply = await message.get_reply_message()
 		if not reply:
-			await message.edit("<b>⚞reply to media⚟</b>")
+			await message.edit("<b>⚞ответь на медиа⚟</b>")
 			return
 		media = reply.media
 		if not media:
-			await message.edit("<b>⚞reply to media⚟</b>")
+			await message.edit("<b>⚞ответь на медиа⚟</b>")
 			return
 		file = await message.client.download_file(media)
 		try:
